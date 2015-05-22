@@ -1,4 +1,9 @@
 #!/bin/bash
+# -------------------------------------------------------------
+# URL monitoring script with alerts
+# Usage: ./pingdom.sh "http://www.google.com" 404
+# Creates: alerts/ in $HOME and stores logs for matching events
+# -------------------------------------------------------------
 mkdir -p "$HOME/alerts"
 alerts="$HOME/alerts"
 curl -v -L -k "$1" &> $alerts/out.txt

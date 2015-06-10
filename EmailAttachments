@@ -7,7 +7,7 @@ class MailHelper
    * Example usage:
    * MailHelper::sendMail("sam@samwaters.com", "Me <me@email.com>", "Test mail", array("/home/sam/files/archive.zip", "/home/sam/files/file.txt"));
    */
-  function sendMail($to, $from, $subject, $message, $attachments)
+  public static function sendMail($to, $from, $subject, $message, $attachments)
   {
     $separator = md5(time());
     $eol = "\r\n";

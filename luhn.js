@@ -2,9 +2,10 @@ Array.prototype.sum = function() {
   var total = 0, length = this.length;
   for(var i = 0; i < length; i++)
   {
-    if(/^\-?(\d+)?(\.\d+)?(e\d+)?$/.test(this[i]))
+    var parsedValue = parseFloat(this[i]);
+    if(!isNaN(parsedValue))
     {
-      total += parseFloat(this[i]);
+      total += parsedValue;
     }
   }
   return total;

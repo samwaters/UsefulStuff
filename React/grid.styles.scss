@@ -1,0 +1,213 @@
+/*
+ Variables
+ */
+$c1: 8.33333333%;
+$c2: 16.66666666%;
+$c3: 25%;
+$c4: 33.33333333%;
+$c5: 41.66666667%;
+$c6: 50%;
+$c7: 58.33333333%;
+$c8: 66.66666667%;
+$c9: 75%;
+$c10: 83.33333333%;
+$c11: 91.66666667%;
+$c12: 100%;
+$gutter-sm: 8px;
+$gutter-lg: 12px;
+
+/*
+ Common definitions
+ */
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+/*
+ XS: 0-599px
+ Gutter: 16px
+ */
+@media(min-width: 0px) {
+  .col {
+    padding:0 $gutter-sm;
+    // Columns
+    &.xs-1 { flex-basis: $c1; max-width: $c1; }
+    &.xs-2 { flex-basis: $c2; max-width: $c2; }
+    &.xs-3 { flex-basis: $c3; max-width: $c3; }
+    &.xs-4 { flex-basis: $c4; max-width: $c4; }
+    &.xs-5 { flex-basis: $c5; max-width: $c5; }
+    &.xs-6 { flex-basis: $c6; max-width: $c6; }
+    &.xs-7 { flex-basis: $c7; max-width: $c7; }
+    &.xs-8 { flex-basis: $c8; max-width: $c8; }
+    &.xs-9 { flex-basis: $c9; max-width: $c9; }
+    &.xs-10 { flex-basis: $c10; max-width: $c10; }
+    &.xs-11 { flex-basis: $c11; max-width: $c11; }
+    &.xs-12 { flex-basis: $c12; max-width: $c12; }
+    // Offsets
+    &.xs-offset-1 { margin-left:$c1; }
+    &.xs-offset-2 { margin-left:$c2; }
+    &.xs-offset-3 { margin-left:$c3; }
+    &.xs-offset-4 { margin-left:$c4; }
+    &.xs-offset-5 { margin-left:$c5; }
+    &.xs-offset-6 { margin-left:$c6; }
+    &.xs-offset-7 { margin-left:$c7; }
+    &.xs-offset-8 { margin-left:$c8; }
+    &.xs-offset-9 { margin-left:$c9; }
+    &.xs-offset-10 { margin-left:$c10; }
+    &.xs-offset-11 { margin-left:$c11; }
+    &.xs-offset-12 { margin-left:$c12; }
+  }
+}
+
+/*
+ SM: 600 - 1023px
+ Gutter: 16px
+ */
+@media(min-width: 600px) {
+  .col {
+    padding:0 $gutter-sm;
+    // Columns
+    &.sm-1 { flex-basis: $c1; max-width: $c1; }
+    &.sm-2 { flex-basis: $c2; max-width: $c2; }
+    &.sm-3 { flex-basis: $c3; max-width: $c3; }
+    &.sm-4 { flex-basis: $c4; max-width: $c4; }
+    &.sm-5 { flex-basis: $c5; max-width: $c5; }
+    &.sm-6 { flex-basis: $c6; max-width: $c6; }
+    &.sm-7 { flex-basis: $c7; max-width: $c7; }
+    &.sm-8 { flex-basis: $c8; max-width: $c8; }
+    &.sm-9 { flex-basis: $c9; max-width: $c9; }
+    &.sm-10 { flex-basis: $c10; max-width: $c10; }
+    &.sm-11 { flex-basis: $c11; max-width: $c11; }
+    &.sm-12 { flex-basis: $c12; max-width: $c12; }
+    // Offsets
+    &.sm-offset-1 { margin-left:$c1; }
+    &.sm-offset-2 { margin-left:$c2; }
+    &.sm-offset-3 { margin-left:$c3; }
+    &.sm-offset-4 { margin-left:$c4; }
+    &.sm-offset-5 { margin-left:$c5; }
+    &.sm-offset-6 { margin-left:$c6; }
+    &.sm-offset-7 { margin-left:$c7; }
+    &.sm-offset-8 { margin-left:$c8; }
+    &.sm-offset-9 { margin-left:$c9; }
+    &.sm-offset-10 { margin-left:$c10; }
+    &.sm-offset-11 { margin-left:$c11; }
+    &.sm-offset-12 { margin-left:$c12; }
+  }
+}
+
+/*
+ MD: 1024 - 1439px
+ Gutter: 24px
+ */
+@media(min-width: 1024px) {
+  .col {
+    padding:0 $gutter-lg;
+    // Columns
+    &.md-1 { flex-basis: $c1; max-width: $c1; }
+    &.md-2 { flex-basis: $c2; max-width: $c2; }
+    &.md-3 { flex-basis: $c3; max-width: $c3; }
+    &.md-4 { flex-basis: $c4; max-width: $c4; }
+    &.md-5 { flex-basis: $c5; max-width: $c5; }
+    &.md-6 { flex-basis: $c6; max-width: $c6; }
+    &.md-7 { flex-basis: $c7; max-width: $c7; }
+    &.md-8 { flex-basis: $c8; max-width: $c8; }
+    &.md-9 { flex-basis: $c9; max-width: $c9; }
+    &.md-10 { flex-basis: $c10; max-width: $c10; }
+    &.md-11 { flex-basis: $c11; max-width: $c11; }
+    &.md-12 { flex-basis: $c12; max-width: $c12; }
+    // Offsets
+    &.md-offset-1 { margin-left:$c1; }
+    &.md-offset-2 { margin-left:$c2; }
+    &.md-offset-3 { margin-left:$c3; }
+    &.md-offset-4 { margin-left:$c4; }
+    &.md-offset-5 { margin-left:$c5; }
+    &.md-offset-6 { margin-left:$c6; }
+    &.md-offset-7 { margin-left:$c7; }
+    &.md-offset-8 { margin-left:$c8; }
+    &.md-offset-9 { margin-left:$c9; }
+    &.md-offset-10 { margin-left:$c10; }
+    &.md-offset-11 { margin-left:$c11; }
+    &.md-offset-12 { margin-left:$c12; }
+  }
+}
+
+/*
+ LG: 1440 - 1919px
+ Gutter: 24px
+ */
+@media(min-width: 1440px) {
+  .col {
+    padding:0 $gutter-lg;
+    // Columns
+    &.lg-1 { flex-basis: $c1; max-width: $c1; }
+    &.lg-2 { flex-basis: $c2; max-width: $c2; }
+    &.lg-3 { flex-basis: $c3; max-width: $c3; }
+    &.lg-4 { flex-basis: $c4; max-width: $c4; }
+    &.lg-5 { flex-basis: $c5; max-width: $c5; }
+    &.lg-6 { flex-basis: $c6; max-width: $c6; }
+    &.lg-7 { flex-basis: $c7; max-width: $c7; }
+    &.lg-8 { flex-basis: $c8; max-width: $c8; }
+    &.lg-9 { flex-basis: $c9; max-width: $c9; }
+    &.lg-10 { flex-basis: $c10; max-width: $c10; }
+    &.lg-11 { flex-basis: $c11; max-width: $c11; }
+    &.lg-12 { flex-basis: $c12; max-width: $c12; }
+    // Offsets
+    &.lg-offset-1 { margin-left:$c1; }
+    &.lg-offset-2 { margin-left:$c2; }
+    &.lg-offset-3 { margin-left:$c3; }
+    &.lg-offset-4 { margin-left:$c4; }
+    &.lg-offset-5 { margin-left:$c5; }
+    &.lg-offset-6 { margin-left:$c6; }
+    &.lg-offset-7 { margin-left:$c7; }
+    &.lg-offset-8 { margin-left:$c8; }
+    &.lg-offset-9 { margin-left:$c9; }
+    &.lg-offset-10 { margin-left:$c10; }
+    &.lg-offset-11 { margin-left:$c11; }
+    &.lg-offset-12 { margin-left:$c12; }
+  }
+}
+
+/*
+ XL: 1920+
+ Gutter: 24px
+ */
+@media(min-width: 1920px) {
+  .col {
+    padding:0 $gutter-lg;
+    // Columns
+    &.xl-1 { flex-basis: $c1; max-width: $c1; }
+    &.xl-2 { flex-basis: $c2; max-width: $c2; }
+    &.xl-3 { flex-basis: $c3; max-width: $c3; }
+    &.xl-4 { flex-basis: $c4; max-width: $c4; }
+    &.xl-5 { flex-basis: $c5; max-width: $c5; }
+    &.xl-6 { flex-basis: $c6; max-width: $c6; }
+    &.xl-7 { flex-basis: $c7; max-width: $c7; }
+    &.xl-8 { flex-basis: $c8; max-width: $c8; }
+    &.xl-9 { flex-basis: $c9; max-width: $c9; }
+    &.xl-10 { flex-basis: $c10; max-width: $c10; }
+    &.xl-11 { flex-basis: $c11; max-width: $c11; }
+    &.xl-12 { flex-basis: $c12; max-width: $c12; }
+    // Offsets
+    &.xl-offset-1 { margin-left:$c1; }
+    &.xl-offset-2 { margin-left:$c2; }
+    &.xl-offset-3 { margin-left:$c3; }
+    &.xl-offset-4 { margin-left:$c4; }
+    &.xl-offset-5 { margin-left:$c5; }
+    &.xl-offset-6 { margin-left:$c6; }
+    &.xl-offset-7 { margin-left:$c7; }
+    &.xl-offset-8 { margin-left:$c8; }
+    &.xl-offset-9 { margin-left:$c9; }
+    &.xl-offset-10 { margin-left:$c10; }
+    &.xl-offset-11 { margin-left:$c11; }
+    &.xl-offset-12 { margin-left:$c12; }
+  }
+}
